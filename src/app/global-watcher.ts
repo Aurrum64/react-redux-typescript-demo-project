@@ -1,6 +1,6 @@
-import { all } from "redux-saga/effects"
-import { storageWatcher } from "../modules/storage/sagas/storage";
+import { all } from "redux-saga/effects";
+import { storageWatcher } from "../modules/redux-saga-storage/sagas/redux-saga-storage";
 
 export function* globalWatcher() {
-    yield all([storageWatcher()])
+  yield all([storageWatcher()]);
 }

@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
-import storageModuleReducer from '../modules/storage/reducers';
+import { combineReducers } from "redux";
+import storageModuleReducer from "../modules/redux-saga-storage/reducers";
 
 const netPlannerReducer = combineReducers({
-    storageReducer: storageModuleReducer
+  storageReducer: storageModuleReducer,
 });
 
 export default netPlannerReducer;
